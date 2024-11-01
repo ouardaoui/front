@@ -1,0 +1,193 @@
+      .trophy-gold { color: #FFD700; }
+      .trophy-silver { color: #C0C0C0; }
+      .trophy-bronze { color: #CD7F32; }
+      
+      .leaderboard-card {
+        transition: transform 0.2s;
+        background-color: rgba(33, 37, 41, 0.4) !important;
+        color: #fff !important;
+      }
+      
+      .leaderboard-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      }
+    
+      .card {
+        background-color: rgba(33, 37, 41, 0.4);
+        border: none;
+        color: #fff;
+      }
+    
+      .card-header {
+        background-color: rgba(33, 37, 41, 0.6) !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        color: #fff;
+      }
+    
+      .table {
+        color: #fff !important;
+      }
+    
+      .table > :not(caption) > * > * {
+        background-color: transparent;
+        border-bottom-color: rgba(255, 255, 255, 0.1);
+        color: #fff;
+      }
+    
+      .player-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgba(33, 37, 41, 0.6);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: #fff;
+      }
+    
+      .animate-score {
+        animation: scorePopup 0.5s ease-out;
+      }
+    
+      @keyframes scorePopup {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.2); }
+        100% { transform: scale(1); }
+      }
+    
+      .table-hover tbody tr:hover {
+        background-color: rgba(33, 37, 41, 0.6);
+      }
+    
+      .text-white {
+        color: #fff !important;
+      }
+    
+      h1, h2, h3, h4, h5, h6, th, td {
+        color: #fff !important;
+      }
+    
+      .table-container {
+        max-height: 400px;
+        overflow-y: auto;
+      }
+    
+      .table-container::-webkit-scrollbar {
+        width: 8px;
+      }
+    
+      .table-container::-webkit-scrollbar-track {
+        background: rgba(33, 37, 41, 0.4);
+      }
+    
+      .table-container::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+      }
+    
+      .rank-number {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #FFD700;
+      }
+    
+      @media (max-width: 768px) {
+        .container {
+          padding: 1rem;
+        }
+        
+        h1 {
+          font-size: 1.5rem;
+          margin-bottom: 1rem !important;
+        }
+        
+        .card-header h5 {
+          font-size: 1rem;
+        }
+        
+        .table {
+          font-size: 0.85rem;
+        }
+        
+        .player-avatar {
+          width: 30px;
+          height: 30px;
+          font-size: 0.8rem;
+        }
+        
+        .rank-number {
+          font-size: 1rem;
+        }
+        
+        .table td, .table th {
+          padding: 0.5rem;
+        }
+        
+        .card-body h6 {
+          font-size: 0.8rem;
+        }
+        
+        .card-body h3 {
+          font-size: 1.2rem;
+        }
+      }
+    
+      @media (max-width: 576px) {
+        .table-container {
+          max-height: 300px;
+        }
+        
+        .table {
+          font-size: 0.75rem;
+        }
+        
+        .player-avatar {
+          width: 25px;
+          height: 25px;
+          font-size: 0.7rem;
+          margin-right: 0.3rem !important;
+        }
+        
+        .stats-cards .col-md-4 {
+          margin-bottom: 1rem;
+        }
+        
+        .card-body {
+          padding: 0.75rem;
+        }
+        
+        .table td, .table th {
+          padding: 0.4rem;
+        }
+      }
+    
+      @media (max-width: 480px) {
+        .table th,
+        .table td {
+          display: none;
+        }
+        
+        .table th:nth-child(1),
+        .table td:nth-child(1),
+        .table th:nth-child(2),
+        .table td:nth-child(2) {
+          display: table-cell;
+        }
+        
+        .player-name {
+          max-width: 150px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+    
+        .stats-cards {
+          margin-top: 1rem;
+        }
+    
+        .table-container {
+          max-height: 400px;
+        }
+      }

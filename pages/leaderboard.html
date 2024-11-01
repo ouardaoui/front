@@ -1,0 +1,59 @@
+<div class="container py-5">
+      <h1 class="text-center mb-5">🏓 Pong Leaderboard</h1>
+      
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card shadow-sm">
+            <div class="card-header bg-primary text-white">
+              <h5 class="mb-0">Top Players</h5>
+            </div>
+            <div class="card-body p-0">
+              <div class="table-container">
+                <table class="table table-hover mb-0">
+                  <thead>
+                    <tr>
+                      <th class="px-4 sticky-top bg-dark">Rank</th>
+                      <th class="sticky-top bg-dark">Player</th>
+                      <th class="sticky-top bg-dark">Wins</th>
+                      <th class="sticky-top bg-dark">Losses</th>
+                      <th class="sticky-top bg-dark">Win Rate</th>
+                      <th class="sticky-top bg-dark">Score</th>
+                    </tr>
+                  </thead>
+                  <tbody id="leaderboardBody">
+                    <!-- Data will be populated by JavaScript -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+    
+          <div class="row mt-4 stats-cards">
+            <div class="col-md-4 col-sm-6">
+              <div class="card leaderboard-card bg-success text-white mb-3 mb-md-0">
+                <div class="card-body">
+                  <h6>Total Games Played</h6>
+                  <h3 id="totalGames">0</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="card leaderboard-card bg-info text-white mb-3 mb-md-0">
+                <div class="card-body">
+                  <h6>Active Players</h6>
+                  <h3 id="activePlayers">0</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <div class="card leaderboard-card bg-warning text-white">
+                <div class="card-body">
+                  <h6>Average Win Rate</h6>
+                  <h3 id="avgWinRate">0%</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
